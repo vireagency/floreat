@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreat | Home</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <!-- <link rel="stylesheet" href="./node_modules/aos/dist/aos.css"> -->
+    <link href="../css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar w-full py-4 px-[5%] xl:px-[8%] absolute top-0 bg-blue-primary flex items-center justify-between">
+        <div class="left flex items-center gap-24">
+            <!-- logo -->
+            <div class="logo flex items-center gap-4">
+                <div class="left w-14">
+                    <img src="./assets/images/floreat_logo.svg" alt="">
+                </div>
+                <div class="right">
+                    <div class="text1">
+                        <img src="./assets/images/floreat_logo_text1.svg" alt="">
+                    </div>
+                    <div class="text2">
+                        <img src="./assets/images/floreat_logo_text2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- navlinks -->
+            <div class="hidden xl:flex items-center gap-14 text-white font-light text-sm">
+                <a href="index.html">Home</a>
+                <a href="./views/about.html">About</a>
+                <div class="hidden md:block extended_menu">
+                    <a href="./views/services.html">Services</a>
+
+                    <div class="menu_hover_container">
+                        <div class="menu_hover flex flex-col justify-center gap-4 text-blue-primary">
+                            <div class="live_in">
+                                <a href="./views/services.html" class="">Live-In Care</a>
+                                <!-- Live-In Care menu hover -->
+                                <div class="liveInCare_menu text-blue-primary flex flex-col justify-center gap-4">
+                                    <a href="./views/care_services/cancer_care.html">Cancer Care</a>
+                                    <a href="./views/care_services/dementia_care.html">Dementia Care</a>
+                                    <a href="./views/care_services/palliative_care.html">Palliative Care</a>
+                                    <a href="./views/care_services/respite_care.html">Respite Care</a>
+                                    <a href="./views/care_services/mental_health.html">Mental Health Care</a>
+                                    <a href="./views/care_services/post_operative.html">Post-Operative Care</a>
+                                    <a href="./views/care_services/holiday_care.html">Holiday Care Support</a>
+                                    <a href="./views/care_services/paediatric_care.html">Paediatric Care</a>
+                                    <a href="./views/care_services/private_care.html">Private Nursing</a>
+                                </div>
+                            </div>
+                            <div class="domCare">
+                                <a href="">Domiciliary Care</a>
+                                <!-- Live-In Care menu hover -->
+                                <div class="domCare_menu text-blue-primary flex flex-col justify-center gap-4">
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <a href="./views/contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="right hidden xl:block">
+            <a href="./views/contact.html" class="px-8 py-5 rounded-xl bg-light-blue text-white rubik_b">Make an
+                Enquiry</a>
+        </div>
+
+        <!-- burger -->
+        <div class="burger xl:hidden" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- menu overlay -->
+    <div id="menu_overlay" class="menu_overlay"></div>
+
+    <!-- mobile nav -->
+    <div id="mobNav" class="xl:hidden mobNav px-4 bg-blue-primary fixed top-0 -left-[100%] w-2/4 h-full z-[9999999] ">
+        <div class="flex pt-8 justify-between items-center">
+            <img src="./assets/images/floreat_logo.svg" class="w-14" alt="">
+            <img id="close" class="cursor-pointer" src="./assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="flex flex-col mt-8 gap-8 rubik_light text-white">
+            <a href="index.html">Home</a>
+            <a href="./views/about.html">About</a>
+            <a href="./views/services.html">Services</a>
+            <a href="./views/contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <!-- hero -->
+    <div class="hero xl:h-full px-[5%] xl:px-[8%]">
+        <div class="h-full pt-[16rem] w-3/5 flex flex-col gap-4 justify-center text-white">
+            <p class="text-3xl xl:text-7xl rubik_sb">Your Loved <br class="hidden xl:block"> Ones Deserve <br
+                    class="hidden xl:block"> The Best
+                Care</p>
+            <p class="text-xl">Choose Our Services Today!</p>
+            <a href="./views/about.html"
+                class="xl:px-14 xl:py-5 px-8 py-3 mb-4 w-max rounded-xl bg-light-green text-white">Learn
+                more</a>
+        </div>
+    </div>
+
+    <main>
+        <section
+            class="px-[6%] xl:px-[8%] xl:h-screen w-full flex relative z-[9999] items-center bg-light-blue text-white overflow-x-hidden">
+            <div class="h-full">
+                <div class="flex flex-col xl:flex-row xl:items-center justify-between mt-20">
+                    <div class="text-3xl xl:text-6xl rubik_sb xl:leading-[4rem]" data-aos="fade-right">Compassionate
+                        <br>
+                        Care When You
+                        <br> Need
+                        It Most
+                    </div>
+                    <p class="xl:text-xl xl:w-1/3 leading-8 rubik_light mt-8" data-aos="fade-left">At Floreat, we
+                        provide
+                        the
+                        care
+                        you need to keep
+                        living the life
+                        you
+                        love! Let us help you stay independent and in the comfort of your own home.</p>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-28 mt-36 w-full">
+                    <div class="card_item flex flex-col gap-4" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-delay="50">
+                        <!-- icon containter -->
+                        <div class="w-[82px] h-[82px] rounded-full bg-light-green relative">
+                            <img src="./assets/images/icons/leaf.svg" class="absolute -right-6 -bottom-1" alt="">
+                        </div>
+                        <!-- heading -->
+                        <p class="font-bold text-xl py-4 rubik_b">Quality Care</p>
+                        <!-- content -->
+                        <p class="leading-7 font-light ">We offer reliable and trustworthy care services with
+                            a
+                            deep
+                            commitment to quality.</p>
+                    </div>
+                    <div class="card_item flex flex-col gap-4" data-aos="zoom-in" data-aos-delay="100"
+                        data-aos-duration="1000">
+                        <!-- icon containter -->
+                        <div class="w-[82px] h-[82px] rounded-full bg-light-green relative">
+                            <img src="./assets/images/icons/steth.svg" class="absolute -right-6 -bottom-1" alt="">
+                        </div>
+                        <!-- heading -->
+                        <p class="font-bold text-xl py-4 rubik_b">Experienced Professionals</p>
+                        <!-- content -->
+                        <p class="leading-7 font-light">Our team of experienced professionals is dedicated to providing
+                            the highest level of care.</p>
+                    </div>
+                    <div class="card_item flex flex-col gap-4 mb-8 xl:mb-0" data-aos="zoom-in" data-aos-delay="150"
+                        data-aos-duration="1000">
+                        <!-- icon containter -->
+                        <div class="w-[82px] h-[82px] rounded-full bg-light-green relative">
+                            <img src="./assets/images/icons/heart.svg" class="absolute -right-6 -bottom-1" alt="">
+                        </div>
+                        <!-- heading -->
+                        <p class="font-bold text-xl py-4 rubik_b">Comprehensive Services</p>
+                        <!-- content -->
+                        <p class="leading-7 font-light">Our comprehensive services include home care, skilled nursing,
+                            and respite care services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+        <section
+            class="px-[8%] xl:h-screen flex items-center relative bg-[#289E34] text-white xl:overflow-x-hidden overflow-hidden">
+            <!-- floating logo image -->
+            <img src="./assets/images/floreat_logo.svg" class="hidden xl:block absolute z-[99] -top-36 -right-24"
+                alt="">
+            <div class="w-full">
+                <p class="text-3xl xl:text-6xl pt-8 rubik_sb" data-aos="zoom-in-right" data-aos-delay="100"
+                    data-aos-duration="1000">
+                    Trusted Care Services <br>- Get the Help You Need Today!</p>
+
+                <p class="text-xl mt-10" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">Our
+                    services are captured under Live-In Care or
+                    Domiciliary Care.</p>
+
+                <div class="flex flex-col xl:flex-row w-full gap-20 mt-20">
+                    <div class="left w-3/5 flex flex-col gap-8">
+                        <div class="p-4 flex gap-4 items-center bg-light-blue rounded-lg" data-aos="fade-right"
+                            data-aos-delay="50" data-aos-duration="1000">
+                            <img src="./assets/images/icons/live_in.svg" alt="">
+                            <span>Live-In Care</span>
+                        </div>
+                        <div class="p-4 flex gap-4 items-center border rounded-lg" data-aos="fade-right"
+                            data-aos-delay="200" data-aos-duration="1000">
+                            <img src="./assets/images/icons/domiciliary.svg" alt="">
+                            <span>Domiciliary Care</span>
+                        </div>
+                        <div class="p-4 flex gap-4 items-center justify-center border rounded-lg" data-aos="fade-right"
+                            data-aos-delay="300" data-aos-duration="1000">
+                            <a href="./views/services.html">See More</a>
+                        </div>
+                    </div>
+
+                    <!-- right content -->
+                    <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+                        <div class="card" data-aos="fade-left" data-aos-delay="50" data-aos-duration="800">
+                            <p class="text-6xl rubik_b opacity-70">01.</p>
+                            <p class="font-bold text-xl pt-12 pb-4 rubik_b">Palliative Care</p>
+                            <p class="leading-7 font-light mb-4 xl:h-36">We understand that at such a stressful and
+                                sensitive
+                                time,
+                                specialist nursing care and trustworthy support can make a huge difference.</p>
+                            <a href="./views/care_services/palliative_care.html" class="underline rubik_light">Learn
+                                more</a>
+                        </div>
+                        <div class="card" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
+                            <p class="text-6xl rubik_b opacity-70">02.</p>
+                            <p class="font-bold text-xl pt-12 pb-4 rubik_b">Dementia Care</p>
+                            <p class="leading-7 font-light mb-4 xl:h-36">We know that living with Dementia can have a
+                                huge
+                                emotional, social, and psychological effect on both the person and their loved ones.</p>
+                            <a href="./views/care_services/dementia_care.html" class="underline rubik_light">Learn
+                                more</a>
+                        </div>
+                        <div class="card  mb-8 xl:mb-0" data-aos="fade-left" data-aos-delay="250"
+                            data-aos-duration="800">
+                            <p class="text-6xl rubik_b opacity-70">03.</p>
+                            <p class="font-bold text-xl pt-12 pb-4 rubik_b">Cancer Care</p>
+                            <p class="leading-7 font-light mb-4 xl:h-36">At Floreat World care services, we provide care
+                                for
+                                people in their own homes who are living with Cancer.</p>
+                            <a href="./views/care_services/cancer_care.html" class="underline rubik_light">Learn
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <section class="px-[8%] xl:h-screen flex items-center relative text-white overflow-x-hidden">
+            <div class="w-full flex flex-col xl:flex-row justify-between gap-24">
+                <div class="left relative xl:w-2/4">
+                    <div class="xl:w-96 mt-14 xl:mt-0 h-[400px] rounded-lg relative" data-aos="flip-left"
+                        data-aos-delay="150" data-aos-duration="1000">
+                        <div class="absolute w-[20.5rem] mx-auto left-0 right-0 h-full bg-light-gradient"></div>
+                        <img src="./assets/images/social_woman.webp" class="w-full rounded-lg h-full object-contain"
+                            alt="">
+                        <img src="./assets/images/floreat_logo.svg"
+                            class="absolute top-32 mx-auto left-0 right-0 w-[20.5rem] -z-10" alt="">
+                    </div>
+                </div>
+                <div class="right xl:w-2/4">
+                    <p class="text-3xl xl:text-6xl pt-8 text-blue-primary rubik_sb pb-12" data-aos="fade-left"
+                        data-aos-delay="100" data-aos-duration="1000">
+                        Caring for Your <br>Loved Ones,<br> When
+                        You
+                        Can't
+                    </p>
+                    <p class="leading-9 text-blue-primary text-xl mb-8 xl:mb-0" data-aos="fade-left"
+                        data-aos-delay="400" data-aos-duration="1000">Take the
+                        worry out of caring for your loved ones <br class="hidden xl:block">
+                        with
+                        our
+                        comprehensive range
+                        of care services. <br class="hidden xl:block">
+                        Let us provide the support and care you need.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- testimonials -->
+        <section class="px-[8%] xl:h-[40rem] py-14 xl:py-0 flex items-center relative bg-grey-bg overflow-x-hidden">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-20">
+                <div class="flex flex-col gap-4" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
+                    <img src="./assets/images/icons/rating.svg" class="w-32" alt="">
+
+                    <p class="leading-7 text-blue-primary pt-4 xl:h-48">"I have been using the care services provided by
+                        Floreat
+                        for
+                        several years now and I'm consistently impressed with the quality of care and attention I
+                        receive. The staff are friendly and professional, and I always feel well taken care of."
+                    </p>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-[80px] h-[80px] rounded-full bg-white">
+                            <img class="rounded-full"
+                                src="./assets/images/portrait-beautiful-woman-posing-white-background_484921-38989 1.webp"
+                                alt="">
+                        </div>
+                        <div class="text-blue-primary">
+                            <p class="rubik_xl">Jackie Ross</p>
+                            <p class="text-xs ">CEO, XYZ Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4" data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
+                    <img src="./assets/images/icons/rating.svg" class="w-32" alt="">
+
+                    <p class="leading-7 text-blue-primary pt-4 xl:h-48">"We used Floreat World Care Services for our
+                        elderly
+                        parents and couldn't be more satisfied. The staff are professional, compassionate, and went
+                        above and beyond to meet our needs. Highly recommended!"
+                    </p>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-[80px] h-[80px] rounded-full bg-white">
+                            <img class="rounded-full" src="./assets/images/Screenshot 2023-03-02 234756 1.webp" alt="">
+                        </div>
+                        <div class="text-blue-primary">
+                            <p class="rubik_xl">Evans Adom</p>
+                            <p class="text-xs ">Architect</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4" data-aos="fade-left" data-aos-delay="350" data-aos-duration="800">
+                    <img src="./assets/images/icons/rating.svg" class="w-32" alt="">
+
+                    <p class="leading-7 text-blue-primary pt-4 xl:h-48">"We have been using this care service
+                        for years and are always impressed with the quality and reliability of their services. Highly
+                        recommended!"
+                    </p>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-[80px] h-[80px] rounded-full bg-white">
+                            <img class="rounded-full"
+                                src="./assets/images/portrait-beautiful-woman-posing-white-background_484921-38989 1-1.webp"
+                                alt="">
+                        </div>
+                        <div class="text-blue-primary">
+                            <p class="rubik_xl">Jada Michaels</p>
+                            <p class="text-xs ">Accountant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-primary h-max py-14 text-white flex items-center justify-center px-[8%]">
+        <div class="w-full h-[70%]">
+            <p class="rubik_b text-3xl xl:text-5xl text-center ">We’ll keep in touch</p>
+
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-4 mt-24">
+                <input type="text"
+                    class="py-4 px-8 xl:w-96 w-full rounded-lg placeholder:text-center placeholder:text-white bg-light-gradient"
+                    placeholder="Enter your email">
+
+                <a href="" class="px-8 py-4 w-full md:w-auto rounded-lg text-center bg-light-green">Subscribe</a>
+            </div>
+
+            <div class="grid grid-cols-1 xl:grid-cols-5 my-16">
+                <div class="flex flex-col md:flex-row gap-4 col-span-2">
+                    <div class="logo">
+                        <img src="./assets/images/floreat_logo.svg" class="w-16" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <img src="./assets/images/floreat_logo_text1.svg" class="w-40" alt="">
+                        <img src="./assets/images/floreat_logo_text2.svg" class="w-44" alt="">
+
+                        <p class="mt-8">"Compassionate Care for Your <br> Loved Ones - Trust Us with <br> Your Family's
+                            Well-Being"
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="index.html">Home</a>
+                    <a href="./views/about.html">About</a>
+                    <a href="./views/services.html">Services</a>
+                    <a href="./views/contact.html">Contact</a>
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="">More Links</a>
+                    <a href="">Live-In Care</a>
+                    <a href="">Domiciliary Care</a>
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="">Contact Details</a>
+                </div>
+
+
+            </div>
+
+            <hr class="border-b-white">
+
+            <div class="flex flex-col xl:flex-row items-center justify-between mt-14">
+                <p>© 2023, Powered by The Vire Agency</p>
+
+                <div class="sc flex items-center gap-4 mt-5 xl:mt-0">
+                    <a href="#">
+                        <img src="./assets/images/icons/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/floreatcare_/">
+                        <img src="./assets/images/icons/insta.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icons/linkedIn.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/floreatcare">
+                        <img src="./assets/images/icons/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/burger.js"></script>
+    <!-- <script src="./node_modules/aos/dist/aos.js"></script> -->
+    <script src="../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

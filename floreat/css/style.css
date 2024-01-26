@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* rubik font */
+@font-face {
+    font-family: 'Rubik_regular';
+    src: url('../assets/fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik_semiBold';
+    src: url('../assets/fonts/Rubik-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik_light';
+    src: url('../assets/fonts/Rubik-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik_md';
+    src: url('../assets/fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik_bold';
+    src: url('../assets/fonts/Rubik-Bold.ttf');
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Rubik_regular';
+    /* scroll-behavior: smooth; */
+}
+
+html {
+    /* overflow-x: hidden; */
+
+}
+
+body {
+    position: relative;
+    /* overflow-x: hidden; */
+
+}
+
+
+/* font utility class */
+.rubik {
+    font-family: 'Rubik_regular';
+}
+
+.rubik_b {
+    font-family: 'Rubik_bold';
+}
+
+.rubik_sb {
+    font-family: 'Rubik_semiBold';
+}
+
+.rubik_md {
+    font-family: 'Rubik_md';
+}
+
+.rubik_light {
+    font-family: 'Rubik_light';
+}
+
+.hero {
+    background: linear-gradient(42.68deg, rgba(10, 115, 147, 0.72) 16.55%, rgba(10, 115, 147, 0) 60.99%), url('../assets/images/banner\ image1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_hero {
+    background: linear-gradient(42.68deg, rgba(10, 115, 147, 0.35) 16.55%, rgba(10, 115, 147, 0.35) 60.99%), url('../assets/images/about_hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -90px center;
+}
+
+.care_hero {
+    background: linear-gradient(42.68deg, rgba(10, 115, 147, 0.35) 16.55%, rgba(10, 115, 147, 0.35) 60.99%), url('../assets/images/care_hero.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -50px center;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    padding: 2px 0;
+    margin: 2px 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.menu_overlay.open {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background-color: hsla(0, 0%, 0%, 0.368);
+}
+
+.mobNav,
+.menu_overlay {
+    transition: all 0.3s ease;
+}
+
+.mobNav.open {
+    left: 0;
+}
+
+.extended_menu {
+    position: relative;
+    transition: visibility 0.3s ease;
+}
+
+
+.extended_menu:hover .menu_hover {
+    visibility: visible;
+}
+
+.menu_hover_container {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    height: 0px;
+}
+
+.menu_hover {
+    visibility: hidden;
+    position: relative;
+    width: 200px;
+    left: -10px;
+    padding: 16px 0 16px 20px;
+    border-top: 4px solid hsla(126, 62%, 60%, 1);
+    border-radius: 0 0 20px 20px;
+    background: hsla(0, 0%, 100%, 0.7);
+}
+
+.liveInCare_menu,
+.domCare_menu {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: 200px;
+    padding: 16px 0 16px 20px;
+    border-top: 4px solid hsla(126, 62%, 60%, 1);
+    border-radius: 0 0 20px 20px;
+    background: hsla(0, 0%, 100%, 0.7);
+}
+
+
+
+.live_in:hover {
+    /* visibility: visible; */
+    color: hsla(126, 62%, 60%, 1);
+}
+
+.live_in:hover .liveInCare_menu,
+.domCare:hover .domCare_menu {
+    visibility: visible;
+}
+
+/* .l */
+
+.teamSwiper {
+    overflow-x: hidden;
+    width: 100% !important;
+    height: 100% !important;
+    /* border: 1px solid red; */
+    /* padding-bottom: 70px !important; */
+    padding: 0 20px 70px 20px !important;
+
+}
+
+.teamSwiper .swiper-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+    /* border: 1px solid black; */
+}
+
+.teamSwiper .swiper-slide {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(128, 128, 128, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media screen and (min-width: 768px) {
+    .swiper-slide {
+        width: 250px !important;
+    }
+} */
+
+.teamSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamSwiper .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}
+
+.teamSwiper .swiper-pagination-bullet-active {
+    background-color: hsla(126, 62%, 60%, 1) !important;
+}
+
+.video-btn,
+.video-box .video-btn {
+    min-width: 96px;
+    max-width: 96px;
+    min-height: 96px;
+    max-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+@-webkit-keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@keyframes sonarWave {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Animations Sonar */
+.sonar-emitter {
+    position: absolute;
+    z-index: 20;
+}
+
+.sonar-emitter::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    background-color: #ff5722;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sonar-emitter::after {
+    -webkit-animation: sonarWave 2s linear infinite;
+    animation: sonarWave 2s linear infinite;
+}
+
+.sonar-emitter-2 {
+    position: relative;
+}
+
+.sonar-emitter-2::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    background-color: #fff;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sonar-emitter-2::after {
+    -webkit-animation: sonarWave 2s linear infinite;
+    animation: sonarWave 2s linear infinite;
+}
+
+.contact form input[type="text"],
+textarea {
+    padding: 10px 20px;
+}

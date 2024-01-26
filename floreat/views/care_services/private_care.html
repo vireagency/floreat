@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreat | Private Care</title>
+    <link rel="stylesheet" href="../../dist/style.css">
+    <!-- aos animation library -->
+    <link href="../../css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar w-full py-4 px-[5%] xl:px-[8%] absolute top-0 bg-blue-primary flex items-center justify-between">
+        <div class="left flex items-center gap-24">
+            <!-- logo -->
+            <div class="logo flex items-center gap-4">
+                <div class="left w-14">
+                    <img src="../../assets/images/floreat_logo.svg" alt="">
+                </div>
+                <div class="right">
+                    <div class="text1">
+                        <img src="../../assets/images/floreat_logo_text1.svg" alt="">
+                    </div>
+                    <div class="text2">
+                        <img src="../../assets/images/floreat_logo_text2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- navlinks -->
+            <div class="hidden xl:flex items-center gap-14 text-white font-light text-sm">
+                <a href="../../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <div class="hidden md:block extended_menu">
+                    <a href="../services.html">Services</a>
+
+                    <div class="menu_hover_container">
+                        <div class="menu_hover flex flex-col justify-center gap-4 text-blue-primary">
+                            <div class="live_in">
+                                <a href="../services.html" class="">Live-In Care</a>
+                                <!-- Live-In Care menu hover -->
+                                <div class="liveInCare_menu text-blue-primary flex flex-col justify-center gap-4">
+                                    <a href="cancer_care.html">Cancer Care</a>
+                                    <a href="dementia_care.html">Dementia Care</a>
+                                    <a href="palliative_care.html">Palliative Care</a>
+                                    <a href="respite_care.html">Respite Care</a>
+                                    <a href="mental_health.html">Mental Health Care</a>
+                                    <a href="post_operative.html">Post-Operative Care</a>
+                                    <a href="holiday_care.html">Holiday Care Support</a>
+                                    <a href="paediatric_care.html">Paediatric Care</a>
+                                    <a href="private_care.html">Private Nursing</a>
+                                </div>
+                            </div>
+                            <div class="domCare">
+                                <a href="">Domiciliary Care</a>
+                                <!-- Live-In Care menu hover -->
+                                <div class="domCare_menu text-blue-primary flex flex-col justify-center gap-4">
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                    <a href="">Domiciliary Care</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <a href="../contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        <div class="right hidden xl:block">
+            <a href="../contact.html" class="px-8 py-5 rounded-xl bg-light-blue text-white rubik_b">Make an Enquiry</a>
+        </div>
+
+        <!-- burger -->
+        <div class="burger xl:hidden" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- menu overlay -->
+    <div id="menu_overlay" class="menu_overlay"></div>
+
+    <!-- mobile nav -->
+    <div id="mobNav" class="xl:hidden mobNav px-4 bg-blue-primary fixed top-0 -left-[100%] w-2/4 h-full z-[9999999] ">
+        <div class="flex pt-8 justify-between items-center">
+            <img src="../../assets/images/floreat_logo.svg" class="w-14" alt="">
+            <img id="close" class="cursor-pointer" src="../../assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="flex flex-col mt-8 gap-8 rubik_light text-white">
+            <a href="../../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../services.html">Services</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <main class="pt-24">
+        <section class="md:px-[12%] xl:px-[18%] px-[8%]">
+            <!-- breadcrumb -->
+            <div class="flex items-center gap-8 text-sm md:text-base">
+                <div class="flex items-center gap-4 py-10">
+                    <hr class="w-14 border-b-light-green border ">
+                    <a href="../services.html" class="text-light-green rubik_md">Services</a>
+                </div>
+                <div class="flex items-center gap-4 py-10">
+                    <hr class="w-14 border-b-light-green border ">
+                    <span class="text-light-green rubik_md">Private Care</span>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-4xl rubik_md text-blue-primary">Private Care</p>
+
+                <div class="content py-8">
+                    <div class="md:float-left mb-4 md:mb-0 md:w-[400px] w-full h-[400px] mr-14 rounded-3xl"
+                        data-aos="fade-right">
+                        <img src="../../assets/images/care/private.webp" class="w-full h-full object-cover rounded-3xl"
+                            alt="">
+                    </div>
+                    <!-- <div class="float-right"> -->
+                    <span class="text-blue-primary">
+                        <p class="rubik_light leading-7" data-aos="fade-left">
+                            Floreat World Care Services! We understand that everyone's care needs are unique, and our
+                            private care services are designed to provide personalized and compassionate care tailored
+                            to your specific requirements. Our team of dedicated professionals is committed to
+                            delivering high-quality private care services that prioritize your comfort, dignity, and
+                            well-being. At Floreat World Care Services, we are committed to delivering private care
+                            services that exceed your expectations. We prioritize your comfort, well-being, and
+                            maintaining your independence within the familiarity of your own home.
+                        </p>
+                    </span>
+                    <!-- </div> -->
+                </div>
+
+                <div class="p-8 md:p-14 bg-grey-bg rounded-3xl flex flex-col md:flex-row items-end justify-between">
+                    <div class="" data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-3xl rubik_md text-light-green pb-4">Our Services Include</p>
+                        <ul class="list-inside list-disc text-blue-primary rubik_light leading-7">
+                            <li>Personalized Care Plans</li>
+                            <li>Skilled Nursing Care</li>
+                            <li>Assistance with Activities of Daily Living (ADLs)</li>
+                            <li>Companionship</li>
+                            <li>Meal Planning and Preparation</li>
+                            <li>Medication Management</li>
+                            <li>Transportation and Accompaniment</li>
+                            <li>Respite Care</li>
+                        </ul>
+                    </div>
+
+                    <div class="md:pb-8 mt-4 w-full md:w-auto" data-aos="fade-left" data-aos-delay="500">
+                        <a href=""
+                            class="md:px-14 md:py-5 px-8 py-3 w-full block mb-4 md:w-max text-center rounded-xl bg-light-green text-white">Contact
+                            Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQS -->
+        <section class="bg-light-blue mt-36 px-[10%] py-[5%]">
+            <div class="content">
+                <p class="text-5xl rubik_sb text-white">FAQs</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-8 md:gap-8 ">
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="300">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q1</span>
+                            </div>
+                            <span class="rubik_sb text-xl">What is private care?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">Private care refers to personalized and individualized
+                            care services provided by professional caregivers in the comfort of your own home. It is
+                            designed to meet your specific needs and preferences, ensuring that you receive the highest
+                            quality of care tailored to your unique requirements.
+                        </p>
+                    </div>
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="500">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q2</span>
+                            </div>
+                            <span class="rubik_sb text-xl">What types of services are included in private care?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">Private care services include a wide range of personalized
+                            services to meet your individual needs. This may include skilled nursing care, assistance
+                            with activities of daily living (ADLs) such as bathing, dressing, and grooming.
+                        </p>
+                    </div>
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="700">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q3</span>
+                            </div>
+                            <span class="rubik_sb text-xl w-4/5"> How do I know if private care is right for me or my
+                                loved one?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">Private care may be beneficial if you or your loved one
+                            prefer to receive care in the comfort of your own home, have specific care needs that
+                            require individualized attention, or if you value personalized care and support.
+                        </p>
+                    </div>
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="300">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q4</span>
+                            </div>
+                            <span class="rubik_sb text-xl w-4/5"> How do I arrange private care services?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">Arranging private care services with Floreat World Care
+                            Services is easy. You can contact us through our website, call our dedicated phone line, or
+                            visit our office in person. Our friendly staff will guide you through the process, discuss
+                            your needs, and work with you to create a personalized care plan that aligns with your
+                            requirements.
+                        </p>
+                    </div>
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="500">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q5</span>
+                            </div>
+                            <span class="rubik_sb text-xl w-4/5">Can I request a specific caregiver for private
+                                care?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">We strive to accommodate your preferences and provide
+                            continuity of care. While we cannot guarantee a specific caregiver, we make every effort to
+                            match you with a caregiver who is a good fit for your needs, preferences, and personality.
+                        </p>
+                    </div>
+                    <div class="faq text-white py-8" data-aos="fade-left" data-aos-delay="700">
+                        <div class="flex items-center gap-4">
+                            <div class="w-[50px] h-[50px] rounded-full bg-light-green flex items-center justify-center">
+                                <span class="rubik_sb">Q6</span>
+                            </div>
+                            <span class="rubik_sb text-xl w-4/5">How do you ensure the quality of private care
+                                services?</span>
+                        </div>
+                        <p class="leading-7 py-4 rubik_light">We uphold high standards of quality care by carefully
+                            selecting and extensively training our caregivers. Our team includes skilled nurses,
+                            experienced caregivers, and compassionate professionals who are dedicated to providing
+                            exceptional care.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-primary h-max py-14 text-white flex items-center justify-center px-[8%]">
+        <div class="w-full h-[70%]">
+            <p class="rubik_b text-3xl xl:text-5xl text-center ">We’ll keep in touch</p>
+
+            <div class="flex flex-col xl:flex-row items-center justify-center gap-4 mt-24">
+                <input type="text"
+                    class="py-4 px-8 xl:w-96 w-full rounded-lg placeholder:text-center placeholder:text-white bg-light-gradient"
+                    placeholder="Enter your email">
+
+                <a href="" class="px-8 py-4 w-full md:w-auto rounded-lg text-center bg-light-green">Subscribe</a>
+            </div>
+
+            <div class="grid grid-cols-1 xl:grid-cols-5 my-16">
+                <div class="flex flex-col md:flex-row gap-4 col-span-2">
+                    <div class="logo">
+                        <img src="../../assets/images/floreat_logo.svg" class="w-16" alt="">
+                    </div>
+                    <div class="mt-4">
+                        <img src="../../assets/images/floreat_logo_text1.svg" class="w-40" alt="">
+                        <img src="../../assets/images/floreat_logo_text2.svg" class="w-44" alt="">
+
+                        <p class="mt-8 rubik_light">"Compassionate Care for Your <br> Loved Ones - Trust Us with
+                            <br>
+                            Your Family's
+                            Well-Being"
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="../../index.html">Home</a>
+                    <a href="../about.html">About</a>
+                    <a href="../services.html">Services</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="">More Links</a>
+                    <a href="">Live-In Care</a>
+                    <a href="">Domiciliary Care</a>
+                </div>
+
+                <div class="flex flex-col gap-8 mt-8 xl:mt-4">
+                    <a href="">Contact Details</a>
+                </div>
+
+
+            </div>
+
+            <hr class="border-b-white">
+
+            <div class="flex flex-col xl:flex-row items-center justify-between mt-14">
+                <p>© 2023, Powered by The Vire Agency</p>
+                <div class="sc flex items-center gap-4 mt-5 xl:mt-0">
+                    <a href="#">
+                        <img src="../../assets/images/icons/facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/floreatcare_/">
+                        <img src="../../assets/images/icons/insta.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../../assets/images/icons/linkedIn.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/floreatcare">
+                        <img src="../../assets/images/icons/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
